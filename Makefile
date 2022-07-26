@@ -32,7 +32,7 @@ CFLAGS_RELEASE = -ofast \
 	-funsafe-math-optimizations \
 	-mlittle-endian \
 
-BIN= snifferplayer
+BIN= rtpsnifferplayer
 
 
 
@@ -42,14 +42,12 @@ RELEASE_OBJS = $(patsubst %.c,release/%.o,$(SOURCES))
 DEBUG_OBJS = $(patsubst %.c,debug/%.o,$(SOURCES))
 OMX_CC_FLAGS = -DHAVE_LIBOPENMAX=2 -DOMX -DOMX_SKIP64BIT 
 OMX_LIB_FLAGS = -L/opt/vc/src/hello_pi/libs/ilclient -L/opt/vc/src/hello_pi/libs/vgfont -lilclient -L/opt/vc/lib -lbrcmGLESv2 -lbrcmEGL -lopenmaxil  
-#MMAL_CC_FLAGS = -I/opt/vc/include/interface/mmal
 
 CFLAGS += $(OMX_CC_FLAGS) 
 
-LIBS = -lpthread -ldl -lm -lbcm_host -lpng
+LIBS = -lpthread -ldl -lm -lbcm_host
 
 LIBS += -lvcos
-#LIBS += -l:libpcap.so.1.9.1
 LIBS += -lpcap
 
 BOLD=\033[1m\e[1;32m
@@ -95,20 +93,20 @@ release_dir:
 	@mkdir -p release
 	
 bin:
-	@mkdir -p ../$@
+	@mkdir -p ./$@
 
 debug: $(DEBUG_OBJS) bin debug_dir
 	@printf "Linking $(BOLD)../bin/$(BIN)_dbg $(NORM) in DEBUG mode\r\n"
-	@$(CC) $(CFLAGS) $(CFLAGS_DEBUG) $(DEBUG_OBJS) $(OMX_LIB_FLAGS) -o ../bin/$(BIN)_dbg $(LIBS)
+	@$(CC) $(CFLAGS) $(CFLAGS_DEBUG) $(DEBUG_OBJS) $(OMX_LIB_FLAGS) -o ./bin/$(BIN)_dbg $(LIBS)
 	@printf '%50s\n' | tr ' ' =
 
 release: $(RELEASE_OBJS) bin release_dir 
 	@printf "Linking $(BOLD)../bin/$(BIN) $(NORM) in RELEASE mode\r\n"
-	@$(CC) $(CFLAGS) $(CFLAGS_DEBUG) $(RELEASE_OBJS) $(OMX_LIB_FLAGS)  -o ../bin/$(BIN) $(LIBS)
+	@$(CC) $(CFLAGS) $(CFLAGS_DEBUG) $(RELEASE_OBJS) $(OMX_LIB_FLAGS)  -o ./bin/$(BIN) $(LIBS)
 	@printf '%50s\n' | tr ' ' =
 
 clean:
-	@rm -vfr *~ *.o ../bin/$(BIN)_dbg bin/$(BIN) $(RELEASE_OBJS) $(DEBUG_OBJS) release/*.o debug/*.o
+	@rm -vfr *~ *.o ./bin/$(BIN)_dbg ./bin/$(BIN) $(RELEASE_OBJS) $(DEBUG_OBJS) release/*.o debug/*.o
 	@printf '%50s\n' | tr ' ' =
 	@printf "CLEAN COMPLETE\n"
 	@printf '%50s\n' | tr ' ' =

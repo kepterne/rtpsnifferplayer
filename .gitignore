@@ -1,5 +1,6 @@
 *.o
 *.bc
+bin/*
 bin/*.pid
 release/*
 debug/*
