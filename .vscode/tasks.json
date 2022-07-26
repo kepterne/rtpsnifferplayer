@@ -1,0 +1,134 @@
+{
+      "version": "2.0.0",
+      "command": "make",
+      "tasks": [
+		{
+                  "label": "Rebuild All",
+			"type": "shell",
+			"presentation": {
+				"reveal": "always",
+				"echo": true
+				},
+				
+                  "args": [
+                        "clean",
+				"all",
+                        "BIN=${workspaceRoot}"
+                  ],
+                  "problemMatcher": {
+                        "owner": "cpp",
+                        "fileLocation": [
+                              "relative",
+                              "${workspaceRoot}"
+                        ],
+                        "pattern": {
+                              "regexp": "^(.*):(\\d+):(\\d+):\\s+(warning|error):\\s+(.*)$",
+                              "file": 1,
+                              "line": 2,
+                              "column": 3,
+                              "severity": 4,
+                              "message": 5
+                        }
+                  },
+                  "group": {
+                        "kind": "build",
+                        "isDefault": true
+                  }
+            },
+            {
+                  "label": "Make Release",
+			"type": "shell",
+			"presentation": {
+				"reveal": "always",
+				"echo": true
+				},
+				
+                  "args": [
+                        "release",
+                        "BIN=${workspaceRoot}"
+                  ],
+                  "problemMatcher": {
+                        "owner": "cpp",
+                        "fileLocation": [
+                              "relative",
+                              "${workspaceRoot}"
+                        ],
+                        "pattern": {
+                              "regexp": "^(.*):(\\d+):(\\d+):\\s+(warning|error):\\s+(.*)$",
+                              "file": 1,
+                              "line": 2,
+                              "column": 3,
+                              "severity": 4,
+                              "message": 5
+                        }
+                  },
+                  "group": {
+                        "kind": "build",
+                        "isDefault": true
+                  }
+            },
+		
+            {
+                  "label": "Clean All",
+                  "type": "shell",
+			"presentation": {
+				"reveal": "always",
+				"echo": true
+				},
+                  "args": [
+                        "clean",
+                        "BIN=${workspaceRoot}"
+                  ],
+                  "problemMatcher": {
+                        "owner": "cpp",
+                        "fileLocation": [
+                              "relative",
+                              "${workspaceRoot}"
+                        ],
+                        "pattern": {
+                              "regexp": "^(.*):(\\d+):(\\d+):\\s+(warning|error):\\s+(.*)$",
+                              "file": 1,
+                              "line": 2,
+                              "column": 3,
+                              "severity": 4,
+                              "message": 5
+                        }
+                  },
+                  "group": {
+                        "kind": "build",
+                        "isDefault": true
+                  }
+		},
+		{
+                  "label": "Make Debug",
+			
+			"type": "shell",
+			"presentation": {
+				"reveal": "always",
+				"echo": true
+				},
+			"args": [
+                        "debug"
+                  ],
+                  "problemMatcher": {
+                        "owner": "cpp",
+                        "fileLocation": [
+                              "relative",
+                              "${workspaceRoot}"
+                        ],
+                        "pattern": {
+                              "regexp": "^(.*):(\\d+):(\\d+):\\s+(warning|error):\\s+(.*)$",
+                              "file": 1,
+                              "line": 2,
+                              "column": 3,
+                              "severity": 4,
+                              "message": 5
+                        }
+                  },
+                  "group": {
+                        "kind": "build",
+                        "isDefault": true
+                  }
+            } 
+      ]
+}

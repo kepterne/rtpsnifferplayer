@@ -1,0 +1,6 @@
+*.o
+*.bc
+bin/*.pid
+release/*
+debug/*
+lib/*.o

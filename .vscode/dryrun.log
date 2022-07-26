@@ -1,0 +1,15 @@
+make --dry-run --keep-going --print-directory
+make: Entering directory '/home/ekremkaracan/src/smartscreen'
+mkdir -p debug
+ 
+mkdir -p ../bin
+printf "Linking \033[1m\e[1;32m../bin/smartscreen_dbg \033[0m\e[0m in DEBUG mode\r\n"
+clang -Wall -I. -I./lib -I/opt/vc/include -I/opt/vc/include/interface/vcos/pthreads -I/opt/vc/include/interface/vmcs_host/linux -I/opt/vc/src/hello_pi/libs/ilclient -Wno-unused-variable -Wno-unused-result -Wno-pointer-sign -Wno-pointer-to-int-cast -Wno-int-to-pointer-cast -Wno-unknown-pragmas -Wno-format-overflow -Wno-multichar -Wno-misleading-indentation -Wno-unused-but-set-variable -Wno-unknown-warning-option -Wno-unused-command-line-argument -Wno-enum-conversion -Wno-parentheses-equality -fcommon -L/opt/vc/lib  -DHAVE_LIBOPENMAX=2 -DOMX -DOMX_SKIP64BIT   -g  debug/lib_utils.o debug/lib_version.o debug/lib_raspberry_pi_revision.o debug/project.o debug/smartscreen_main.o debug/lib_dispmanx.o debug/lib_texteditor.o debug/lib_fbutils.o debug/lib_efont.o debug/gui.o debug/lib_json.o debug/lib_dirmon.o debug/lib_h264player.o debug/lib_process.o debug/footer.o debug/display.o debug/sensors.o debug/lib_tcp.o -L/opt/vc/src/hello_pi/libs/ilclient -L/opt/vc/src/hello_pi/libs/vgfont -lilclient -L/opt/vc/lib -lbrcmGLESv2 -lbrcmEGL -lopenmaxil   -o ../bin/smartscreen_dbg -lpthread -ldl -lm -lbcm_host -lpng -lvcos -lpcap
+printf '%50s\n' | tr ' ' =
+mkdir -p release
+ 
+printf "Linking \033[1m\e[1;32m../bin/smartscreen \033[0m\e[0m in RELEASE mode\r\n"
+clang -Wall -I. -I./lib -I/opt/vc/include -I/opt/vc/include/interface/vcos/pthreads -I/opt/vc/include/interface/vmcs_host/linux -I/opt/vc/src/hello_pi/libs/ilclient -Wno-unused-variable -Wno-unused-result -Wno-pointer-sign -Wno-pointer-to-int-cast -Wno-int-to-pointer-cast -Wno-unknown-pragmas -Wno-format-overflow -Wno-multichar -Wno-misleading-indentation -Wno-unused-but-set-variable -Wno-unknown-warning-option -Wno-unused-command-line-argument -Wno-enum-conversion -Wno-parentheses-equality -fcommon -L/opt/vc/lib  -DHAVE_LIBOPENMAX=2 -DOMX -DOMX_SKIP64BIT   -g  release/lib_utils.o release/lib_version.o release/lib_raspberry_pi_revision.o release/project.o release/smartscreen_main.o release/lib_dispmanx.o release/lib_texteditor.o release/lib_fbutils.o release/lib_efont.o release/gui.o release/lib_json.o release/lib_dirmon.o release/lib_h264player.o release/lib_process.o release/footer.o release/display.o release/sensors.o release/lib_tcp.o -L/opt/vc/src/hello_pi/libs/ilclient -L/opt/vc/src/hello_pi/libs/vgfont -lilclient -L/opt/vc/lib -lbrcmGLESv2 -lbrcmEGL -lopenmaxil    -o ../bin/smartscreen -lpthread -ldl -lm -lbcm_host -lpng -lvcos -lpcap
+printf '%50s\n' | tr ' ' =
+make: Leaving directory '/home/ekremkaracan/src/smartscreen'
+ 

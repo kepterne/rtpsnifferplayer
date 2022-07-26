@@ -1,0 +1,587 @@
+make all --print-data-base --no-builtin-variables --no-builtin-rules --question
+# GNU Make 4.2.1
+# Built for arm-unknown-linux-gnueabihf
+# Copyright (C) 1988-2016 Free Software Foundation, Inc.
+# License GPLv3+: GNU GPL version 3 or later <http://gnu.org/licenses/gpl.html>
+# This is free software: you are free to change and redistribute it.
+# There is NO WARRANTY, to the extent permitted by law.
+
+# Make data base, printed on Tue Jun 21 11:38:25 2022
+
+# Variables
+
+# automatic
+<D = $(patsubst %/,%,$(dir $<))
+# automatic
+?F = $(notdir $?)
+# default
+.SHELLFLAGS := -c
+# environment
+XDG_SESSION_CLASS = user
+# environment
+VSCODE_AGENT_FOLDER = /home/ekremkaracan/.vscode-server
+# environment
+XDG_SESSION_TYPE = tty
+# environment
+VSCODE_LOG_NATIVE = false
+# makefile (from 'Makefile', line 48)
+DEBUG_OBJS = $(patsubst %.c,debug/%.o,$(SOURCES))
+# automatic
+?D = $(patsubst %/,%,$(dir $?))
+# makefile (from 'Makefile', line 23)
+CPPFLAGS = -Wall -I./lib -Wno-unused-variable -Wno-unused-result -Wno-int-to-pointer-cast -Wno-unknown-pragmas -Wno-format-overflow 
+# automatic
+@D = $(patsubst %/,%,$(dir $@))
+# automatic
+@F = $(notdir $@)
+# default
+MAKE_VERSION := 4.2.1
+# makefile
+CURDIR := /home/ekremkaracan/src/smartscreen
+# makefile
+SHELL = /bin/sh
+# makefile (from 'Makefile', line 35)
+BIN = smartscreen
+# environment
+VSCODE_NLS_CONFIG = {"locale":"en","availableLanguages":{}}
+# environment
+_ = /home/ekremkaracan/.vscode-server/bin/30d9c6cd9483b2cc586687151bcbcd635f373630/node
+# makefile (from 'Makefile', line 53)
+CFLAGS = -Wall -I. -I./lib -I/opt/vc/include -I/opt/vc/include/interface/vcos/pthreads -I/opt/vc/include/interface/vmcs_host/linux -I/opt/vc/src/hello_pi/libs/ilclient -Wno-unused-variable -Wno-unused-result -Wno-pointer-sign -Wno-pointer-to-int-cast -Wno-int-to-pointer-cast -Wno-unknown-pragmas -Wno-format-overflow -Wno-multichar -Wno-misleading-indentation -Wno-unused-but-set-variable -Wno-unknown-warning-option -Wno-unused-command-line-argument -Wno-enum-conversion -Wno-parentheses-equality -fcommon -L/opt/vc/lib  $(OMX_CC_FLAGS) 
+# makefile (from 'Makefile', line 61)
+BLUE = \033[1m\e[1;34m
+# makefile (from 'Makefile', line 1)
+MAKEFILE_LIST :=  Makefile
+# makefile (from 'Makefile', line 47)
+RELEASE_OBJS = $(patsubst %.c,release/%.o,$(SOURCES))
+# 'override' directive
+GNUMAKEFLAGS := 
+# makefile (from 'Makefile', line 45)
+SOURCES = lib_utils.c lib_version.c  lib_raspberry_pi_revision.c project.c $(BIN)_main.c lib_dispmanx.c lib_texteditor.c lib_fbutils.c lib_efont.c gui.c  lib_json.c lib_dirmon.c lib_h264player.c lib_process.c footer.c display.c sensors.c lib_tcp.c
+# environment
+DBUS_SESSION_BUS_ADDRESS = unix:path=/run/user/1001/bus
+# makefile (from 'Makefile', line 1)
+VERSION = 1.1
+# environment
+VSCODE_VERBOSE_LOGGING = true
+# environment
+VSCODE_CWD = /home/ekremkaracan
+# environment
+SSH_CONNECTION = 192.168.1.250 49350 192.168.1.12 22
+# environment
+PATH = /home/ekremkaracan/.vscode-server/bin/30d9c6cd9483b2cc586687151bcbcd635f373630/bin/remote-cli:/home/ekremkaracan/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/local/games:/usr/games
+# makefile (from 'Makefile', line 60)
+BOLD = \033[1m\e[1;32m
+# environment
+XDG_RUNTIME_DIR = /run/user/1001
+# environment
+TEXTDOMAIN = Linux-PAM
+# environment
+VSCODE_LOG_STACK = false
+# environment
+VSCODE_IPC_HOOK_CLI = /run/user/1001/vscode-ipc-d3a7fcee-b231-438a-97e4-bd8b9e80c0b6.sock
+# default
+.FEATURES := target-specific order-only second-expansion else-if shortest-stem undefine oneshell archives jobserver output-sync check-symlink load
+# makefile (from 'Makefile', line 49)
+OMX_CC_FLAGS = -DHAVE_LIBOPENMAX=2 -DOMX -DOMX_SKIP64BIT 
+# environment
+LS_COLORS = 
+# automatic
+%F = $(notdir $%)
+# makefile (from 'Makefile', line 50)
+OMX_LIB_FLAGS = -L/opt/vc/src/hello_pi/libs/ilclient -L/opt/vc/src/hello_pi/libs/vgfont -lilclient -L/opt/vc/lib -lbrcmGLESv2 -lbrcmEGL -lopenmaxil  
+# makefile (from 'Makefile', line 62)
+NORM = \033[0m\e[0m
+# environment
+VSCODE_PIPE_LOGGING = true
+# environment
+PWD = /home/ekremkaracan/src/smartscreen
+# default
+.LOADED := 
+# automatic
+*D = $(patsubst %/,%,$(dir $*))
+# environment
+VSCODE_AMD_ENTRYPOINT = vs/workbench/api/node/extensionHostProcess
+# environment
+HOME = /home/ekremkaracan
+# environment
+LOGNAME = ekremkaracan
+# environment
+APPLICATION_INSIGHTS_NO_DIAGNOSTIC_CHANNEL = 1
+# automatic
++F = $(notdir $+)
+# environment
+VSCODE_HANDLES_UNCAUGHT_ERRORS = true
+# automatic
+^D = $(patsubst %/,%,$(dir $^))
+# environment
+MAKELEVEL := 0
+# default
+MAKE = $(MAKE_COMMAND)
+# default
+MAKECMDGOALS := all
+# environment
+SHLVL = 1
+# makefile (from 'Makefile', line 2)
+CC = clang
+# environment
+XDG_SESSION_ID = 6
+# environment
+USER = ekremkaracan
+# makefile
+.DEFAULT_GOAL := all
+# makefile (from 'Makefile', line 30)
+CFLAGS_RELEASE = -ofast -Ofast -funsafe-math-optimizations -mlittle-endian 
+# automatic
+%D = $(patsubst %/,%,$(dir $%))
+# makefile (from 'Makefile', line 27)
+CFLAGS_DEBUG = -g 
+# default
+MAKE_COMMAND := make
+# default
+.VARIABLES := 
+# automatic
+*F = $(notdir $*)
+# makefile
+MAKEFLAGS = pqrR
+# environment
+MFLAGS = -pqrR
+# environment
+SSH_CLIENT = 192.168.1.250 49350 22
+# environment
+MAIL = /var/mail/ekremkaracan
+# automatic
++D = $(patsubst %/,%,$(dir $+))
+# environment
+BROWSER = /home/ekremkaracan/.vscode-server/bin/30d9c6cd9483b2cc586687151bcbcd635f373630/bin/helpers/browser.sh
+# environment
+NO_AT_BRIDGE = 1
+# environment
+VSCODE_HANDLES_SIGPIPE = true
+# default
+MAKEFILES := 
+# automatic
+<F = $(notdir $<)
+# environment
+LC_ALL = C
+# makefile (from 'Makefile', line 58)
+LIBS = -lpthread -ldl -lm -lbcm_host -lpng -lvcos -lpcap
+# automatic
+^F = $(notdir $^)
+# default
+SUFFIXES := 
+# default
+.INCLUDE_DIRS = /usr/include /usr/local/include /usr/include
+# default
+.RECIPEPREFIX := 
+# default
+MAKE_HOST := arm-unknown-linux-gnueabihf
+# environment
+LANG = C
+# environment
+VSCODE_EXTHOST_WILL_SEND_SOCKET = true
+# variable set hash-table stats:
+# Load=85/1024=8%, Rehash=0, Collisions=9/137=7%
+
+# Pattern-specific Variable Values
+
+# No pattern-specific variable values.
+
+# Directories
+
+# lib (device 45826, inode 424450): 18 files, no impossibilities so far.
+# . (device 45826, inode 392822): 23 files, no impossibilities.
+
+# 41 files, no impossibilities in 2 directories.
+
+# Implicit Rules
+
+debug/lib_%.o: lib/%.c | debug_dir
+#  recipe to execute (from 'Makefile', line 65):
+	@printf "Compiling\t$(BOLD)%s$(NORM)\r\n\tto\t$(BLUE)%s$(NORM)\r\n" $? $@
+	@$(CC) $(CFLAGS_DEBUG) $(CFLAGS) -c $? -o $@
+	@printf '%50s\n' | tr ' ' -
+
+debug/%.o: %.c | debug_dir
+#  recipe to execute (from 'Makefile', line 69):
+	@printf "Compiling\t$(BOLD)%s$(NORM)\r\n\tto\t$(BLUE)%s$(NORM)\r\n" $? $@
+	@$(CC) $(CFLAGS_DEBUG) $(CFLAGS) -c $? -o $@
+	@printf '%50s\n' | tr ' ' -
+
+release/lib_%.o: lib/%.c | release_dir
+#  recipe to execute (from 'Makefile', line 74):
+	@printf "Compiling\t$(BOLD)%s$(NORM)\r\n\tto\t$(BLUE)%s$(NORM)\r\n" $? $@
+	@$(CC) $(CFLAGS_RELEASE) $(CFLAGS) -c $? -o $@
+	@printf '%50s\n' | tr ' ' -
+
+release/%.o: %.c | release_dir
+#  recipe to execute (from 'Makefile', line 79):
+	@printf "Compiling\t$(BOLD)%s$(NORM)\r\n\tto\t$(BLUE)%s$(NORM)\r\n" $? $@
+	@$(CC) $(CFLAGS_RELEASE) $(CFLAGS) -c $? -o $@
+	@printf '%50s\n' | tr ' ' -
+
+release/%.opp: %.cpp | release_dir
+#  recipe to execute (from 'Makefile', line 84):
+	@printf "Compiling\t$(BOLD)%s$(NORM)\r\n\tto\t$(BLUE)%s$(NORM)\r\n" $? $@
+	@$(CC) $(CFLAGS_RELEASE) $(CPPFLAGS) -c $? -o $@
+	@printf '%50s\n' | tr ' ' -
+
+debug/%.opp: %.cpp | debug_dir
+#  recipe to execute (from 'Makefile', line 89):
+	@printf "Compiling\t$(BOLD)%s$(NORM)\r\n\tto\t$(BLUE)%s$(NORM)\r\n" $? $@
+	@$(CC) $(CFLAGS_DEBUG) $(CPPFLAGS) -c $? -o $@
+	@printf '%50s\n' | tr ' ' -
+
+# 6 implicit rules, 0 (0.0%) terminal.
+
+# Files
+
+# Not a target:
+release/lib_efont.o:
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+
+# Not a target:
+debug/footer.o:
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+
+# Not a target:
+release/lib_h264player.o:
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+
+# Not a target:
+release/lib_fbutils.o:
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+
+all: debug release
+#  Command line target.
+#  Implicit rule search has been done.
+#  File does not exist.
+#  File has been updated.
+#  Needs to be updated (-q is set).
+# variable set hash-table stats:
+# Load=0/32=0%, Rehash=0, Collisions=0/3=0%
+
+bin:
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+#  recipe to execute (from 'Makefile', line 103):
+	@mkdir -p ../$@
+
+# Not a target:
+release/lib_tcp.o:
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+
+# Not a target:
+release/lib_dispmanx.o:
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+
+# Not a target:
+debug/lib_version.o:
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+
+# Not a target:
+release/lib_process.o:
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+
+# Not a target:
+debug/lib_raspberry_pi_revision.o:
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+
+debug_dir:
+#  Implicit rule search has not been done.
+#  Implicit/static pattern stem: ''
+#  File does not exist.
+#  File has been updated.
+#  Needs to be updated (-q is set).
+# automatic
+# @ := debug_dir
+# automatic
+# % := 
+# automatic
+# * := 
+# automatic
+# + := 
+# automatic
+# | := 
+# automatic
+# < := 
+# automatic
+# ^ := 
+# automatic
+# ? := 
+# variable set hash-table stats:
+# Load=8/32=25%, Rehash=0, Collisions=1/11=9%
+#  recipe to execute (from 'Makefile', line 97):
+	@mkdir -p debug
+
+# Not a target:
+debug/lib_texteditor.o:
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+
+# Not a target:
+debug/lib_tcp.o:
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+
+# Not a target:
+.SUFFIXES:
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+
+# Not a target:
+Makefile:
+#  Implicit rule search has been done.
+ 
+#  Last modified 2022-06-21 11:36:57.059089987
+#  File has been updated.
+#  Successfully updated.
+
+# Not a target:
+release/footer.o:
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+
+debug: debug/lib_utils.o debug/lib_version.o debug/lib_raspberry_pi_revision.o debug/project.o debug/smartscreen_main.o debug/lib_dispmanx.o debug/lib_texteditor.o debug/lib_fbutils.o debug/lib_efont.o debug/gui.o debug/lib_json.o debug/lib_dirmon.o debug/lib_h264player.o debug/lib_process.o debug/footer.o debug/display.o debug/sensors.o debug/lib_tcp.o bin debug_dir
+#  Implicit rule search has not been done.
+#  Last modified 2022-06-21 11:37:01.249021955
+#  File has been updated.
+#  Needs to be updated (-q is set).
+# variable set hash-table stats:
+# Load=0/32=0%, Rehash=0, Collisions=0/3=0%
+#  recipe to execute (from 'Makefile', line 106):
+	@printf "Linking $(BOLD)../bin/$(BIN)_dbg $(NORM) in DEBUG mode\r\n"
+	@$(CC) $(CFLAGS) $(CFLAGS_DEBUG) $(DEBUG_OBJS) $(OMX_LIB_FLAGS) -o ../bin/$(BIN)_dbg $(LIBS)
+	@printf '%50s\n' | tr ' ' =
+
+debug/lib_utils.o: lib/utils.c | debug_dir
+#  Implicit rule search has been done.
+#  Implicit/static pattern stem: 'utils'
+#  Last modified 2022-06-21 11:33:20.65082445
+#  File has been updated.
+#  Needs to be updated (-q is set).
+# variable set hash-table stats:
+# Load=0/32=0%, Rehash=0, Collisions=0/3=0%
+#  recipe to execute (from 'Makefile', line 65):
+	@printf "Compiling\t$(BOLD)%s$(NORM)\r\n\tto\t$(BLUE)%s$(NORM)\r\n" $? $@
+	@$(CC) $(CFLAGS_DEBUG) $(CFLAGS) -c $? -o $@
+	@printf '%50s\n' | tr ' ' -
+
+# Not a target:
+release/lib_version.o:
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+
+# Not a target:
+debug/project.o:
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+
+# Not a target:
+debug/sensors.o:
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+
+# Not a target:
+release/lib_raspberry_pi_revision.o:
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+
+release_dir:
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+#  recipe to execute (from 'Makefile', line 100):
+	@mkdir -p release
+	
+
+# Not a target:
+release/lib_texteditor.o:
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+
+# Not a target:
+lib/utils.c:
+#  Implicit rule search has been done.
+#  Last modified 2022-06-20 22:16:37.300072535
+#  File has been updated.
+#  Successfully updated.
+
+# Not a target:
+debug/lib_json.o:
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+
+release: release/lib_utils.o release/lib_version.o release/lib_raspberry_pi_revision.o release/project.o release/smartscreen_main.o release/lib_dispmanx.o release/lib_texteditor.o release/lib_fbutils.o release/lib_efont.o release/gui.o release/lib_json.o release/lib_dirmon.o release/lib_h264player.o release/lib_process.o release/footer.o release/display.o release/sensors.o release/lib_tcp.o bin release_dir
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+#  recipe to execute (from 'Makefile', line 111):
+	@printf "Linking $(BOLD)../bin/$(BIN) $(NORM) in RELEASE mode\r\n"
+	@$(CC) $(CFLAGS) $(CFLAGS_DEBUG) $(RELEASE_OBJS) $(OMX_LIB_FLAGS)  -o ../bin/$(BIN) $(LIBS)
+	@printf '%50s\n' | tr ' ' =
+
+# Not a target:
+.DEFAULT:
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+
+# Not a target:
+debug/lib_dirmon.o:
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+
+# Not a target:
+release/gui.o:
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+
+# Not a target:
+release/lib_utils.o:
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+
+# Not a target:
+debug/smartscreen_main.o:
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+
+clean:
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+#  recipe to execute (from 'Makefile', line 116):
+	@rm -vfr *~ *.o ../bin/$(BIN)_dbg bin/$(BIN) $(RELEASE_OBJS) $(DEBUG_OBJS) release/*.o debug/*.o
+	@printf '%50s\n' | tr ' ' =
+	@printf "CLEAN COMPLETE\n"
+	@printf '%50s\n' | tr ' ' =
+
+# Not a target:
+debug/display.o:
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+
+# Not a target:
+debug/lib_efont.o:
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+
+# Not a target:
+release/project.o:
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+
+# Not a target:
+release/sensors.o:
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+
+# Not a target:
+debug/lib_h264player.o:
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+
+# Not a target:
+debug/lib_fbutils.o:
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+
+# Not a target:
+release/lib_json.o:
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+
+# Not a target:
+debug/lib_dispmanx.o:
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+
+# Not a target:
+release/lib_dirmon.o:
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+
+# Not a target:
+debug/lib_process.o:
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+
+# Not a target:
+debug/gui.o:
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+
+# Not a target:
+release/smartscreen_main.o:
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+
+# Not a target:
+release/display.o:
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+
+# files hash-table stats:
+# Load=47/1024=5%, Rehash=0, Collisions=9/108=8%
+# VPATH Search Paths
+
+# No 'vpath' search paths.
+
+# No general ('VPATH' variable) search path.
+
+# strcache buffers: 1 (0) / strings = 96 / storage = 1314 B / avg = 13 B
+# current buf: size = 8174 B / used = 1314 B / count = 96 / avg = 13 B
+
+# strcache performance: lookups = 131 / hit rate = 26%
+# hash-table stats:
+# Load=96/8192=1%, Rehash=0, Collisions=2/131=2%
+# Finished Make data base on Tue Jun 21 11:38:25 2022
+
+ 
